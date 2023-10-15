@@ -13,5 +13,10 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- require("lsp-format").setup {}
+-- require("lspconfig").tsserver.setup { on_attach = require("lsp-format").on_attach }
+-- require("lspconfig").html.setup { on_attach = require("lsp-format").on_attach }
+
+
 -- 
 -- lspconfig.pyright.setup { blabla}

@@ -5,3 +5,9 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+--
+
+vim.wo.relativenumber = true
+vim.opt.scrolloff = 20
+-- vim.keymap.del("n", "<leader>fm")
+

@@ -37,6 +37,12 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- added by me
+    "angular-language-server",
+    "eslint_d",
+    "rust-analyzer",
+    "tailwindcss-language-server",
   },
 }
 

@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -60,6 +60,17 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
+  { "fedepujol/bracketpair.nvim", event = "VeryLazy", enabled = false },
+  { "f-person/git-blame.nvim", event = "VeryLazy" },
+  { "kdheepak/lazygit.nvim", event = "VeryLazy", dependencies = { "nvim-lua/plenary.nvim" } },
+  { "folke/trouble.nvim", event = "VeryLazy", dependencies = { "nvim-tree/nvim-web-devicons" } },
+  { "lukas-reineke/lsp-format.nvim", event = "VeryLazy" },
+  { "lewis6991/gitsigns.nvim", event = "VeryLazy" },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" },
+  },
 }
 
 return plugins
