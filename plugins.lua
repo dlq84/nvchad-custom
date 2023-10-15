@@ -71,6 +71,8 @@ local plugins = {
     event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" },
   },
+  { "stevearc/resession.nvim", event = "VeryLazy" },
+  { "rcarriga/nvim-notify", event = "VeryLazy", config = require "custom.configs.notify" },
 }
 
 return plugins

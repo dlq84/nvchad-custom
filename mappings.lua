@@ -60,6 +60,14 @@ M.general = {
     ["<leader>ld"] = { function() require("telescope.builtin").lsp_definitions() end, "Definition of current symbol" },
     ["<leader>lt"] = { function() require("telescope.builtin").lsp_type_definitions() end, "Definition of current type" },
     -- ["<leader>"]
+
+    -- Resession
+    ["<leader>s"] = { "Session" },
+    ["<leader>ss"] = { function() require("resession").save() end, "Save Session" },
+    ["<leader>sl"] = { function() require("resession").load() end, "Load Session" },
+    ["<leader>sd"] = { function() require("resession").delete() end, "Delete Session" },
+
+
   },
   v = {
     [">"] = { ">gv", "indent" },
