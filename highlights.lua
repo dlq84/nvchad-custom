@@ -8,6 +8,16 @@ local M = {}
 M.override = {
   Comment = {
     italic = true,
+    fg = "#9e9e9e",
+  },
+  CursorLine = {
+    bg = "one_bg",
+  },
+  CursorLineNr = {
+    bg = "one_bg",
+  },
+  LineNr = {
+    fg = { "grey", 25 },
   },
 }
 
